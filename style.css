@@ -1,7 +1,9 @@
-#button {
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 9px;
-    width: 10%;
-    text-align: center;
+.pic {
+    width: 35%;
+    height: 35%;
+    border-radius: 2px;
 }
+
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */

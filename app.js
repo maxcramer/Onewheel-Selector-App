@@ -29,13 +29,10 @@ function whichOnewheel() {
         v1++;
         plus++;
         pintSH++;
-        oneto2, over15 == false;
     }
-
     if(oneto2.checked == true) {
         pint++;
         xrSH++
-        
     }
 
     if(over15.checked == true) {
@@ -141,6 +138,9 @@ function whichOnewheel() {
     if (xr == max) {
         console.log("xr");
         xrView.hidden = false;
+    }
+    if( xr == max && under1.checked == true) {
+        xrView.hidden = true;
     }
     if (plus == max) {
         console.log("plus");
