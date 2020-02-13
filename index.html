@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./app.js"></script>
+    <title>Onewheel-Selector</title>
+</head>
+<body>
+    <div id="title">
+        <h2>Which Onewheel is right for you?</h2>
+    </div>    
+    <div id="selectors">
+        <form action="/action_page.php">
+            <div>
+                <h4>How much do you have to spend?</h4>
+                <input type="checkbox" id="under1" name="under1" value="1">
+                <label for="under1">Under £1000</label><br>
+                <input type="checkbox" id="1-2" name="1-2" value="1-2">
+                <label for="1-2">£1000 - £1500</label><br>
+                <input type="checkbox" id="over15" name="vehicle3" value="Boat">
+                <label for="vehicle3">Over £1500</label><br><br>
+            </div>
+            <div>
+                <h4>What distance do you need?</h4>
+                <input type="checkbox" name="less6" value="less6">
+                <label for="less6">6 miles or less</label><br>
+                <input type="checkbox" name="6-8" value="6-8">
+                <label for="6-8">6 - 8 miles</label><br>
+                <input type="checkbox" name="over8" value="over8">
+                <label for="over8">Over 8 miles</label><br><br>
+            </div>
+            <button id="button" type="submit" value="submit" onClick="whichOnewheel()">find out</button>
+        </form>
+    </div>
+</body>
+</html>
