@@ -4,6 +4,39 @@
     border-radius: 2px;
 }
 
+#title {
+    text-align: center;
+    margin: 4%;
+}
 /* body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } */
+
+h4 {
+    margin-bottom: 0 !important;
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem !important;
+}
+
+#form_outter {
+    display: flex;
+    justify-content: center;
+}
+
+#displayImage {
+    margin: 0 3rem 2rem 3rem;
+}
+
+
+#button_div {
+    text-align: center;
+}
+
+.awnser_outter {
+    padding: 2rem 3rem;
+}

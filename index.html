@@ -15,77 +15,82 @@
         <h2 class="title">Which Onewheel is right for you?</h2>
     </div>    
     <div id="selectors">
-        <form>
-            <div class="control">
-                <h4>How much do you have to spend?</h4>
-                <input type="radio" id="under1" name="cost" value="1">
-                <label class="radio" for="under1">Under £1000</label><br>
-                <input type="radio" id="1-2" name="cost" value="1-2">
-                <label class="radio" for="1-2">£1000 - £1500</label><br>
-                <input type="radio" id="over15" name="cost" value="over15">
-                <label class="radio" for="over15">Over £1500</label><br><br>
-            </div>
-            <div class="control">
-                <h4>What distance do you need?</h4>
-                <input type="radio" id="less6" name="distance" value="less6">
-                <label class="radio" for="less6">6 miles or less</label><br>
-                <input type="radio" id="sixto8" name="distance" value="sixto8">
-                <label class="radio" for="sixto8">6 - 8 miles</label><br>
-                <input type="radio" id="over8" name="distance" value="over8">
-                <label class="radio" for="over8">Over 8 miles</label><br><br>
-            </div>
-            <div class="control"> 
-                <h4>Large or small footpads</h4>
-                <input type="radio" id="width4" name="width" value="width4">
-                <label class="radio" for="width4">4 Inch</label><br>
-                <input type="radio" id="width6" name="width" value="width6">
-                <label class="radio" for="width6">6 Inch</label><br>
-            </div>
-            <div class="control">
-                <h4>What is your riding style?</h4>
-                <input type="radio" id="gentle" name="style" value="gentle">
-                <label class="radio" for="gentle">Gentle</label><br>
-                <input type="radio" id="offroad" name="style" value="offroad">
-                <label class="radio" for="offroad">Offroad</label><br>
-                <input type="radio" id="tricks" name="style" value="tricks">
-                <label class="radio" for="tricks">Tricks</label><br>
-                <input type="radio" id="Onroad" name="style" value="Onroad">
-                <label class="radio" for="Onroad">Onroad</label><br><br>
-            </div>
-            <div class="control">
-                <h4>What do you want your top speed to be?</h4>
-                <input type="radio" id="lowspeed" name="speed" value="lowspeed">
-                <label class="radio" for="lowspeed">Bellow 15mph</label><br>
-                <input type="radio" id="midspeed" name="speed" value="midspeed">
-                <label class="radio" for="midspeed">15mph-18mph</label><br>
-                <input type="radio" id="highspeed" name="speed" value="highspeed">
-                <label class="radio" for="highspeed">Over 18mph</label><br><br>
-            </div>
-            <div class="button is-primary is-outlined" type="submit" value="submit" onClick="whichOnewheel()">find out</div>
-        </form>
+        <div id="form_outter">
+            <form class="box">
+                <div class="control">
+                    <h4 class="title is-4">How much do you have to spend?</h4>
+                    <input type="radio" id="under1" name="cost" value="1">
+                    <label class="radio" for="under1">Under £1000</label><br>
+                    <input type="radio" id="1-2" name="cost" value="1-2">
+                    <label class="radio" for="1-2">£1000 - £1500</label><br>
+                    <input type="radio" id="over15" name="cost" value="over15">
+                    <label class="radio" for="over15">Over £1500</label><br><br>
+                </div>
+                <div class="control">
+                    <h4 class="title is-4">What distance do you need?</h4>
+                    <input type="radio" id="less6" name="distance" value="less6">
+                    <label class="radio" for="less6">6 miles or less</label><br>
+                    <input type="radio" id="sixto8" name="distance" value="sixto8">
+                    <label class="radio" for="sixto8">6 - 8 miles</label><br>
+                    <input type="radio" id="over8" name="distance" value="over8">
+                    <label class="radio" for="over8">Over 8 miles</label><br><br>
+                </div>
+                <div class="control"> 
+                    <h4 class="title is-4">Large or small footpads</h4>
+                    <input type="radio" id="width4" name="width" value="width4">
+                    <label class="radio" for="width4">4 Inch</label><br>
+                    <input type="radio" id="width6" name="width" value="width6">
+                    <label class="radio" for="width6">6 Inch</label><br><br>
+                </div>
+                <div class="control">
+                    <h4 class="title is-4">What is your riding style?</h4>
+                    <input type="radio" id="gentle" name="style" value="gentle">
+                    <label class="radio" for="gentle">Gentle</label><br>
+                    <input type="radio" id="offroad" name="style" value="offroad">
+                    <label class="radio" for="offroad">Offroad</label><br>
+                    <input type="radio" id="tricks" name="style" value="tricks">
+                    <label class="radio" for="tricks">Tricks</label><br>
+                    <input type="radio" id="Onroad" name="style" value="Onroad">
+                    <label class="radio" for="Onroad">Onroad</label><br><br>
+                </div>
+                <div class="control">
+                    <h4 class="title is-4">What do you want your top speed to be?</h4>
+                    <input type="radio" id="lowspeed" name="speed" value="lowspeed">
+                    <label class="radio" for="lowspeed">Bellow 15mph</label><br>
+                    <input type="radio" id="midspeed" name="speed" value="midspeed">
+                    <label class="radio" for="midspeed">15mph-18mph</label><br>
+                    <input type="radio" id="highspeed" name="speed" value="highspeed">
+                    <label class="radio" for="highspeed">Over 18mph</label><br><br>
+                </div>
+                <div id="button_div">
+                    <div class="button is-primary is-outlined" type="submit" value="submit" onClick="whichOnewheel()">find out</div>
+                </div>
+            </form>
+        </div>
+        <br>
         <div id="displayImage">
-            <div id="v1View" hidden="true">
-                <h3>Onewheel V1</h3>
+            <div class="awnser_outter" id="v1View" hidden="true">
+                <h3 class="title is-5">Onewheel V1</h3>
                 <img class="pic" src="./images/assets.newatlas.jpg" alt="Onewheel V1">
             </div>
-            <div id="pintView" hidden="true">
-                <h3>Pint</h3>
+            <div class="awnser_outter" id="pintView" hidden="true">
+                <h3 class="title is-5">Pint</h3>
                 <img class="pic" src="./images/Screenshot 2020-02-13 21.06.45.png" alt="Onewheel Pint">
             </div>
-            <div id="xrView" hidden=true>
-                <h3>XR</h3>
+            <div class="awnser_outter" id="xrView" hidden=true>
+                <h3 class="title is-5">XR</h3>
                 <img class="pic" src="./images/Screenshot 2020-02-13 21.06.36.png" alt="Onewheel XR">
             </div>
-            <div id="plusView" hidden="true">
-                <h3>Plus</h3>
+            <div class="awnser_outter" id="plusView" hidden="true">
+                <h3 class="title is-5">Plus</h3>
                 <img class="pic" src="./images/onewheel-plus.jpg" alt="Onewheel Plus">
             </div>
-            <div id="xrSHView" hidden="true">
-                <h3>XR Second Hand</h3>
+            <div class="awnser_outter" id="xrSHView" hidden="true">
+                <h3 class="title is-5">XR Second Hand</h3>
                 <img class="pic" src="./images/00nTZO2Io9Oqcf2YPFTX3fZ-6.fit_scale.size_2698x1517.v1569484810.jpg" alt=""XR Second Hand>
             </div>
-            <div id="pintSHView" hidden="true">
-                <h3>Pint Second Hand</h3>
+            <div class="awnser_outter" id="pintSHView" hidden="true">
+                <h3 class="title is-5">Pint Second Hand</h3>
                 <img class="pic " src="./images/im-89584.jpg" alt="Pint Second Hand">
             </div>
         </div>

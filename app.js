@@ -154,4 +154,14 @@ function whichOnewheel() {
         console.log("pintSH");
         pintSHView.hidden = false;
     }
+
+    if(max == 0) {
+        alert("Please make some selections below");
+        v1View.hidden = true;
+        pintView.hidden = true;
+        xrView.hidden = true;
+        plusView.hidden = true;
+        xrSHView.hidden = true;
+        pintSHView.hidden = true;
+    }
 }
