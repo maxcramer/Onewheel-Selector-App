@@ -6,7 +6,9 @@
 
 #title {
     text-align: center;
-    margin: 4%;
+    margin: 5% 3% -5% 8.5%;
+    display: flex;
+    flex-direction: row;
 }
 /* body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,4 +41,35 @@ h4 {
 
 .awnser_outter {
     padding: 2rem 3rem;
+}
+
+#logo_img {
+    width: 23%;
+    margin-right: 3%;
+}
+
+#mrowLogo {
+    height: 150px;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 0rem !important;
+}
+
+#footerTagline {
+    bottom: 0;
+    position: fixed;
+    padding-left: 7.5%;
+}
+
+#connectIG {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    padding-right: 4%;
 }

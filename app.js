@@ -1,3 +1,5 @@
+// SETS HIGHEST POINTS BOARD SELECTED FROM RADIO BUTTON SELECTIONS  
+// AND RECOMMENDS HIGHEST POINTS BOARD
 let pint = 0;
 let xr = 0;
 let plus = 0;
@@ -6,7 +8,6 @@ let pintSH = 0;
 let xrSH = 0;
 
 function whichOnewheel() {
-    // console.log("running");
     const under1 = document.getElementById("under1");
     const oneto2 = document.getElementById("1-2");
     const over15 = document.getElementById("over15");
@@ -23,7 +24,6 @@ function whichOnewheel() {
     const midspeed = document.getElementById("midspeed");
     const highspeed = document.getElementById("highspeed");
    
-
     // PRICE CHECK
     if(under1.checked == true) {
         v1++;
@@ -34,35 +34,28 @@ function whichOnewheel() {
         pint++;
         xrSH++
     }
-
     if(over15.checked == true) {
         xr++;
-        // console.log("the value of the xr is", xr);
     }
-
     
     // DISTANCE CHECK
     if(less6.checked == true) {
         v1++;
         plus++;
     }
-
     if(sixto8.checked == true) {
         pint++;
         pintSH++
     }
-
     if(over8.checked == true) {
         xr++;
         xrSH++;
-
     }
 
     // FOOTPAD SIZING
     if(width4.checked == true) {
         pint++;
     }
-
     if(width6.checked == true) {
         xr++;
         plus++;
@@ -75,19 +68,16 @@ function whichOnewheel() {
     if(gentle.checked == true) {
         pint++;
     }
-
     if(offroad.checked == true) {
         xr++;
         plus++;
         xrSH++;
     }
-
     if(tricks.checked == true) {
         pint++;
         xr++;
         plus++;
     }
-
     if(onroad.checked == true) {
        xr++;
        plus++;
@@ -100,61 +90,42 @@ function whichOnewheel() {
         pint++;
         pintSH++;
     }
-
     if(midspeed.checked == true) {
         plus++;
     }
-
     if(highspeed.checked == true) {
         xr++;
         xrSH++;
     }
 
-
-    console.log("the value of the v1 is ", v1);
-    console.log("the value of the pint is ", pint);
-    console.log("the value of the xr is ", xr);
-    console.log("the value of the plus is ", plus);
-    console.log("the value of the second hand XR is ", xrSH);
-    console.log("the value of the second hand Pint is ", pintSH);
-    
+    // FINDS THE HIGHEST VALUED BOARD 
     var newBoardArray = [v1, pint, xr, plus, xrSH, pintSH];
     const max = newBoardArray.reduce(function(a, b) {
-        return Math.max(a, b);
-        
+        return Math.max(a, b);    
     })
 
-    const pintView = document.getElementById("pintView");
-    
-    console.log(max);
+    // UNHIDDING ELEMENTS IF BOARD IS HIGHEST POINTS
     if(v1 == max) {
-        console.log("v1");
         v1View.hidden = false;
     }
     if (pint == max) {
-        console.log("pint");
         pintView.hidden = false;
     }
     if (xr == max) {
-        console.log("xr");
         xrView.hidden = false;
     }
     if( xr == max && under1.checked == true) {
         xrView.hidden = true;
     }
     if (plus == max) {
-        console.log("plus");
         plusView.hidden = false;
     }
     if (xrSH == max) {
-        console.log("xrSH");
         xrSHView.hidden = false;
     }
     if (pintSH == max) {
-        console.log("pintSH");
         pintSHView.hidden = false;
     }
-
     if(max == 0) {
         alert("Please make some selections below");
         v1View.hidden = true;
