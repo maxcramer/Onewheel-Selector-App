@@ -113,7 +113,7 @@ function whichOnewheel() {
         xrSH++;
     }
 
-    console.clear();
+
     console.log("the value of the v1 is ", v1);
     console.log("the value of the pint is ", pint);
     console.log("the value of the xr is ", xr);
@@ -126,24 +126,32 @@ function whichOnewheel() {
         return Math.max(a, b);
         
     })
+
+    const pintView = document.getElementById("pintView");
     
     console.log(max);
     if(v1 == max) {
         console.log("v1");
+        v1View.hidden = false;
     }
     if (pint == max) {
         console.log("pint");
+        pintView.hidden = false;
     }
     if (xr == max) {
         console.log("xr");
+        xrView.hidden = false;
     }
     if (plus == max) {
         console.log("plus");
+        plusView.hidden = false;
     }
     if (xrSH == max) {
         console.log("xrSH");
+        xrSHView.hidden = false;
     }
     if (pintSH == max) {
         console.log("pintSH");
+        pintSHView.hidden = false;
     }
 }
