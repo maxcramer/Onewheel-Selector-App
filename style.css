@@ -2,6 +2,7 @@
     width: 35%;
     height: 35%;
     border-radius: 2px;
+    padding-right: 4%;
 }
 
 #title {
@@ -10,9 +11,6 @@
     display: flex;
     flex-direction: row;
 }
-/* body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
 
 h4 {
     margin-bottom: 0 !important;
@@ -31,7 +29,7 @@ h4 {
 }
 
 #displayImage {
-    margin: 0 3rem 2rem 3rem;
+    margin: 0 5rem 2rem 5rem;
 }
 
 
@@ -41,6 +39,11 @@ h4 {
 
 .awnser_outter {
     padding: 2rem 3rem;
+}
+
+.awnser_inner {
+    display: flex;
+    flex-direction: row;
 }
 
 #logo_img {
@@ -73,3 +76,17 @@ h4 {
     right: 0;
     padding-right: 4%;
 }
+
+#reset {
+    padding-top: 2%;
+}
+
+input {
+    cursor: pointer;
+} 
+
+.img_title {
+    display: flex;
+    flex-direction: row;
+}
+

@@ -67,6 +67,7 @@ function whichOnewheel() {
     // RIDING STYLE    
     if(gentle.checked == true) {
         pint++;
+        v1++;
     }
     if(offroad.checked == true) {
         xr++;
@@ -77,6 +78,7 @@ function whichOnewheel() {
         pint++;
         xr++;
         plus++;
+        xrSH++;
     }
     if(onroad.checked == true) {
        xr++;
@@ -126,13 +128,13 @@ function whichOnewheel() {
     if (pintSH == max) {
         pintSHView.hidden = false;
     }
-    if(max == 0) {
-        alert("Please make some selections below");
-        v1View.hidden = true;
-        pintView.hidden = true;
-        xrView.hidden = true;
-        plusView.hidden = true;
-        xrSHView.hidden = true;
-        pintSHView.hidden = true;
-    }
+    // if(max == 0) {
+    //     alert("Please select what you are looking for below");
+    //     v1View.hidden = true;
+    //     pintView.hidden = true;
+    //     xrView.hidden = true;
+    //     plusView.hidden = true;
+    //     xrSHView.hidden = true;
+    //     pintSHView.hidden = true;
+    // }
 }
