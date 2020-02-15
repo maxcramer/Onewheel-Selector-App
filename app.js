@@ -153,6 +153,7 @@ function resetForm() {
     let plusView = document.getElementById("plusView");
     let xrSHView = document.getElementById("xrSHView");
     let pintSHView = document.getElementById("pintSHView");
+    let Form = document.getElementsByTagName("Form")
 
     pint = 0;
     xr = 0;
@@ -168,6 +169,11 @@ function resetForm() {
     xrSHView.hidden = true;
     pintSHView.hidden = true;
     
+    function clearForm() {
+        input = false;
+    }
+
+    clearForm()
             // input = document.getElementsByTagName("input");
             // input.checked = false;
             console.log("pint Value", pint);
