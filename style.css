@@ -50,6 +50,7 @@ h4 {
 #logo_img {
     width: 23%;
     margin-right: 3%;
+    max-height: 125px;
 }
 
 #mrowLogo {
