@@ -3,6 +3,7 @@
     height: 35%;
     border-radius: 2px;
     padding-right: 4%;
+    margin-left: 20%;
 }
 
 #title {
@@ -90,3 +91,4 @@ input {
     flex-direction: row;
 }
 
+ 
