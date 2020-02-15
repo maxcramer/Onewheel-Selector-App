@@ -128,13 +128,49 @@ function whichOnewheel() {
     if (pintSH == max) {
         pintSHView.hidden = false;
     }
-    // if(max == 0) {
-    //     alert("Please select what you are looking for below");
-    //     v1View.hidden = true;
-    //     pintView.hidden = true;
-    //     xrView.hidden = true;
-    //     plusView.hidden = true;
-    //     xrSHView.hidden = true;
-    //     pintSHView.hidden = true;
-    // }
+    if(max == 0) {
+        alert("Please select what you are looking for below");
+        v1View.hidden = true;
+        pintView.hidden = true;
+        xrView.hidden = true;
+        plusView.hidden = true;
+        xrSHView.hidden = true;
+        pintSHView.hidden = true;
+    }
+    console.log("pint Value", pint);
+    console.log("xr Value", xr);
+    console.log("plus Value", plus);
+    console.log("v1 Value", v1);
+    console.log("pintSH Value", pintSH);
+    console.log("xrSH Value", xrSH);
+    
 }
+
+function resetForm() {
+    pint = 0;
+    xr = 0;
+    plus = 0;
+    v1 = 0;
+    pintSH = 0;
+    xrSH = 0;
+    max = 0;
+    // v1View.hidden = true;
+    // pintView.hidden = true;
+    // xrView.hidden = true;
+    // plusView.hidden = true;
+    // xrSHView.hidden = true;
+    // pintSHView.hidden = true;
+    
+            // input = document.getElementsByTagName("input");
+            // input.checked = false;
+            console.log("pint Value", pint);
+            console.log("xr Value", xr);
+            console.log("plus Value", plus);
+            console.log("v1 Value", v1);
+            console.log("pintSH Value", pintSH);
+            console.log("xrSH Value", xrSH);
+        }
+        resetForm();
+
+
+
