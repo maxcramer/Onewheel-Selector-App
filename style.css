@@ -50,7 +50,7 @@ h4 {
 #logo_img {
     width: 23%;
     margin-right: 3%;
-    max-height: 125px;
+    max-height: 145px;
 }
 
 #mrowLogo {
@@ -125,7 +125,7 @@ input {
     }
     #logo_img {
         width: 31%;
-        max-height: 125px;
+        max-height: 105px;
         margin-right: 2%;
     }
 
