@@ -105,7 +105,7 @@ function whichOnewheel() {
     const max = newBoardArray.reduce(function(a, b) {
         return Math.max(a, b);    
     })
-
+    
     // UNHIDDING ELEMENTS IF BOARD IS HIGHEST POINTS
     if(v1 == max) {
         v1View.hidden = false;
@@ -147,6 +147,13 @@ function whichOnewheel() {
 }
 
 function resetForm() {
+    let v1View = document.getElementById("v1View");
+    let pintView = document.getElementById("pintView");
+    let xrView = document.getElementById("xrView");
+    let plusView = document.getElementById("plusView");
+    let xrSHView = document.getElementById("xrSHView");
+    let pintSHView = document.getElementById("pintSHView");
+
     pint = 0;
     xr = 0;
     plus = 0;
@@ -154,12 +161,12 @@ function resetForm() {
     pintSH = 0;
     xrSH = 0;
     max = 0;
-    // v1View.hidden = true;
-    // pintView.hidden = true;
-    // xrView.hidden = true;
-    // plusView.hidden = true;
-    // xrSHView.hidden = true;
-    // pintSHView.hidden = true;
+    v1View.hidden = true;
+    pintView.hidden = true;
+    xrView.hidden = true;
+    plusView.hidden = true;
+    xrSHView.hidden = true;
+    pintSHView.hidden = true;
     
             // input = document.getElementsByTagName("input");
             // input.checked = false;
@@ -170,7 +177,7 @@ function resetForm() {
             console.log("pintSH Value", pintSH);
             console.log("xrSH Value", xrSH);
         }
-        resetForm();
+
 
 
 
