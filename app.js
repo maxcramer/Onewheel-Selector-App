@@ -1,5 +1,5 @@
 // SETS HIGHEST POINTS BOARD SELECTED FROM RADIO BUTTON SELECTIONS  
-// AND RECOMMENDS HIGHEST POINTS BOARDgit commit 
+// AND RECOMMENDS HIGHEST POINTS BOARD
 let pint = 0;
 let xr = 0;
 let plus = 0;
@@ -137,13 +137,6 @@ function whichOnewheel() {
         xrSHView.hidden = true;
         pintSHView.hidden = true;
     }
-    console.log("pint Value", pint);
-    console.log("xr Value", xr);
-    console.log("plus Value", plus);
-    console.log("v1 Value", v1);
-    console.log("pintSH Value", pintSH);
-    console.log("xrSH Value", xrSH);
-    
 }
 
 function resetForm() {
@@ -160,13 +153,6 @@ function resetForm() {
     plusView.hidden = true;
     xrSHView.hidden = true;
     pintSHView.hidden = true;
-    
-            console.log("pint Value", pint);
-            console.log("xr Value", xr);
-            console.log("plus Value", plus);
-            console.log("v1 Value", v1);
-            console.log("pintSH Value", pintSH);
-            console.log("xrSH Value", xrSH);
 }
 
 
