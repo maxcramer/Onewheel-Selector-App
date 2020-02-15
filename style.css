@@ -126,4 +126,26 @@ input {
         width: 31%;
         margin-right: 2%;
     }
+
+    .awnser_inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .awnser_outter {
+        padding: 0;
+    }
+
+    .pic {
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 1rem;
+    }
+    #displayImage {
+    margin: 0px 2rem 3rem 2rem;
+    }
+    ul {
+    list-style: none;
+    margin-top: -5% !important;
+    margin-bottom: 7% !important;
+    }
 } 
