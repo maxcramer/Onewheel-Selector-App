@@ -92,3 +92,38 @@ input {
 }
 
  
+@media only screen and (max-width: 500px) {
+    .box {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    #mrowLogo {
+        height: 100px;
+        margin-left: -17px;
+    }
+
+    #footerTagline {
+        padding-left: 6.5%;
+        font-size: 11px;
+    }
+
+    #connectIG {
+        padding-right: 2%;
+        font-size: 12px;
+    }
+    #title {
+        margin: 5% 4% 5% 2.5%;
+    }
+    .mobile_title {
+        color: #363636;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.125;
+        text-align: left;
+    }
+    #logo_img {
+        width: 31%;
+        margin-right: 2%;
+    }
+} 
