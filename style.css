@@ -124,6 +124,7 @@ input {
     }
     #logo_img {
         width: 31%;
+        max-height: 20%;
         margin-right: 2%;
     }
 
