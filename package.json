@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxcramer/Onewheel-Selector-App.git"
+    "url": "git+https://github.com/maxcramer/Onewheel-Selector-App.git"
   },
   "author": "Max Cramer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maxcramer/Onewheel-Selector-App/issues"
   },
-  "homepage": "https://github.com/maxcramer/Onewheel-Selector-App"
+  "homepage": "https://github.com/maxcramer/Onewheel-Selector-App#readme"
 }
