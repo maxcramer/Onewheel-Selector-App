@@ -144,12 +144,6 @@ function whichOnewheel() {
         xrSHView.hidden = true;
         pintSHView.hidden = true;
     }
-    console.log("Pint", pint);
-    console.log("xr", xr);
-    console.log("plus", plus);
-    console.log("v1", v1);
-    console.log("pintSH", pintSH);
-    console.log("xrSH", xrSH);
 }
 
 function resetForm() {
