@@ -117,11 +117,20 @@ function whichOnewheel() {
     if(v1 == max) {
         v1View.hidden = false;
     }
+    if(v1 !== max) {
+        v1View.hidden = true;
+    }
     if (pint == max) {
         pintView.hidden = false;
     }
+    if(pint !== max) {
+        pintView.hidden = true;
+    }
     if (xr == max) {
         xrView.hidden = false;
+    }
+    if(xr !== max) {
+        xrView.hidden = true;
     }
     if( xr == max && under1.checked == true) {
         xrView.hidden = true;
@@ -129,11 +138,20 @@ function whichOnewheel() {
     if (plus == max) {
         plusView.hidden = false;
     }
+    if(plus !== max) {
+        plusView.hidden = true;
+    }
     if (xrSH == max) {
         xrSHView.hidden = false;
     }
+    if(xrSH !== max) {
+        xrSHView.hidden = true;
+    }
     if (pintSH == max) {
         pintSHView.hidden = false;
+    }
+    if(pintSH !== max) {
+        pintSHView.hidden = true;
     }
     if(max == 0) {
         alert("Please select what you are looking for below");
@@ -144,6 +162,7 @@ function whichOnewheel() {
         xrSHView.hidden = true;
         pintSHView.hidden = true;
     }
+
 }
 
 function resetForm() {
