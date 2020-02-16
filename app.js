@@ -23,6 +23,13 @@ function whichOnewheel() {
     const lowspeed = document.getElementById("lowspeed");
     const midspeed = document.getElementById("midspeed");
     const highspeed = document.getElementById("highspeed");
+
+    pint = 0;
+    xr = 0;
+    plus = 0;
+    v1 = 0;
+    pintSH = 0;
+    xrSH = 0;
    
     // PRICE CHECK
     if(under1.checked == true) {
@@ -137,6 +144,12 @@ function whichOnewheel() {
         xrSHView.hidden = true;
         pintSHView.hidden = true;
     }
+    console.log("Pint", pint);
+    console.log("xr", xr);
+    console.log("plus", plus);
+    console.log("v1", v1);
+    console.log("pintSH", pintSH);
+    console.log("xrSH", xrSH);
 }
 
 function resetForm() {
@@ -154,7 +167,4 @@ function resetForm() {
     xrSHView.hidden = true;
     pintSHView.hidden = true;
 }
-
-
-
 
