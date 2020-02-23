@@ -6,6 +6,7 @@
 		</span>
 		<a href="https://www.instagram.com/m__row" target="_blank">
 			<lottie-player
+				alt="instagram link"
 				class="BottomBar__instagram"
 				:src="instagramAnimation"
 				:options="animationOptions"
