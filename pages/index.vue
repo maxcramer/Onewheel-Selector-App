@@ -1,46 +1,64 @@
 <template>
-	<section class="section">
-		<div class="columns is-mobile">
-			<card title="Free" icon="github-circle">
-				Open source on
-				<a href="https://github.com/buefy/buefy">
-					GitHub
-				</a>
-			</card>
+	<div class="Page">
+		<top-bar />
 
-			<card title="Responsive" icon="cellphone-link">
-				<b class="has-text-grey">
-					Every
-				</b>
-				component is responsive
-			</card>
+		<selector class="Page__questions" @input="onSelection" @reset="reset" />
 
-			<card title="Modern" icon="alert-decagram">
-				Built with
-				<a href="https://vuejs.org/">
-					Vue.js
-				</a>
-				and
-				<a href="http://bulma.io/">
-					Bulma
-				</a>
-			</card>
+		<showcase v-if="selection" class="Page__showcase" :item="selection" />
 
-			<card title="Lightweight" icon="arrange-bring-to-front">
-				No other internal dependency
-			</card>
-		</div>
-	</section>
+		<bottom-bar />
+	</div>
 </template>
 
 <script>
-import Card from '../components/Card.vue';
+import TopBar from '../components/TopBar.vue';
+import Selector from '../components/Selector.vue';
+import Showcase from '../components/Showcase.vue';
+import BottomBar from '../components/BottomBar.vue';
 
 export default {
-	name: 'HomePage',
-
+	name: 'Page',
 	components: {
-		Card
+		TopBar,
+		Selector,
+		Showcase,
+		BottomBar
+	},
+	data() {
+		return {
+			selection: null
+		};
+	},
+	methods: {
+		onSelection(result) {
+			this.selection = result;
+		},
+		reset() {
+			this.selection = null;
+		}
 	}
 };
 </script>
+
+<style lang="scss">
+$width: 50%;
+$marginBelowPageItem: 3rem;
+
+.Page {
+	color: #363636;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 48px; // to account for bottom-bar
+
+	&__questions {
+		width: $width;
+		margin-bottom: $marginBelowPageItem !important;
+	}
+
+	&__showcase {
+		width: $width;
+		margin-bottom: $marginBelowPageItem;
+	}
+}
+</style>

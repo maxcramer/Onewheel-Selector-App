@@ -4,7 +4,7 @@ export default {
 	 ** Headers of the page
 	 */
 	head: {
-		title: process.env.npm_package_name || '',
+		title: process.env.npm_package_name || 'Onewheel Selector',
 		meta: [
 			{ charset: 'utf-8' },
 			{
@@ -42,8 +42,8 @@ export default {
 	 ** Nuxt.js modules
 	 */
 	modules: [
-		// Doc: https://buefy.github.io/#/documentation
-		'nuxt-buefy',
+		// Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
+		'@nuxtjs/bulma',
 		// Doc: https://axios.nuxtjs.org/usage
 		'@nuxtjs/axios',
 		'@nuxtjs/pwa'
@@ -57,6 +57,13 @@ export default {
 	 ** Build configuration
 	 */
 	build: {
+		postcss: {
+			preset: {
+				features: {
+					customProperties: false
+				}
+			}
+		},
 		/*
 		 ** You can extend webpack config here
 		 */
