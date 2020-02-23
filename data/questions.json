@@ -1,0 +1,141 @@
+[
+	{
+		"text": "How much do you have to spend?",
+		"options": [
+			{
+				"value": "budget",
+				"label": "Under £1000",
+				"criteria": {
+					"<": [{ "var": "price.max" }, 1000]
+				}
+			},
+			{
+				"value": "standard",
+				"label": "£1000 - £1500",
+				"criteria": {
+					"and": {
+						"<": [{ "var": "price.max" }, 1500],
+						">": [{ "var": "price.max" }, 1000]
+					}
+				}
+			},
+			{
+				"value": "deluxe",
+				"label": "Over £1500",
+				"criteria": {
+					">": [{ "var": "price.max" }, 1500]
+				}
+			}
+		]
+	},
+	{
+		"text": "What distance do you need?",
+		"options": [
+			{
+				"value": "low",
+				"label": "6 miles or less",
+				"criteria": {
+					"<=": [{ "var": "range" }, 6]
+				}
+			},
+			{
+				"value": "standard",
+				"label": "6 - 8 miles",
+				"criteria": {
+					"and": {
+						">": [{ "var": "range" }, 6],
+						"<=": [{ "var": "range" }, 8]
+					}
+				}
+			},
+			{
+				"value": "high",
+				"label": "Over 8 miles",
+				"criteria": {
+					">": [{ "var": "range" }, 8]
+				}
+			}
+		]
+	},
+	{
+		"text": "Large or small footpads",
+		"options": [
+			{
+				"value": "small",
+				"label": "4 Inch",
+				"criteria": {
+					"<": [{ "var": "footpad" }, 6]
+				}
+			},
+			{
+				"value": "large",
+				"label": " 6 Inch",
+				"criteria": {
+					">=": [{ "var": "footpad" }, 6]
+				}
+			}
+		]
+	},
+	{
+		"text": "What is your riding style?",
+		"options": [
+			{
+				"value": "gentle",
+				"label": "Gentle",
+				"criteria": {
+					"in": ["gentle", "$options.rideSyles"]
+				}
+			},
+			{
+				"value": "offroad",
+				"label": "Offroad",
+				"criteria": {
+					"in": ["offroad", "$options.rideSyles"]
+				}
+			},
+			{
+				"value": "tricks",
+				"label": "Tricks",
+				"criteria": {
+					"in": ["tricks", "$options.rideSyles"]
+				}
+			},
+			{
+				"value": "onroad",
+				"label": "Onroad",
+				"criteria": {
+					"in": ["onroad", "$options.rideSyles"]
+				}
+			}
+		]
+	},
+	{
+		"text": "What do you want your top speed to be?",
+		"options": [
+			{
+				"value": "slow",
+				"label": "Below 15mph",
+				"criteria": {
+					"<": [{ "var": "topSpeed.max" }, 15]
+				}
+			},
+			{
+				"value": "standard",
+				"label": "15mph - 18mph",
+				"criteria": {
+					"and": {
+						">=": [{ "var": "topSpeed.max" }, 15],
+						"<=": [{ "var": "topSpeed.max" }, 18]
+					}
+				}
+			},
+			{
+				"value": "fast",
+				"label": "Over 18mph",
+				"criteria": {
+					">": [{ "var": "topSpeed.max" }, 18]
+				}
+			}
+		]
+	}
+]
