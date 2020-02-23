@@ -1,4 +1,6 @@
 # Onewheel Selector
+https://onewheel-selector.web.app
+
 > The best way to find your ideal ride
 
 ## Local Development
@@ -19,3 +21,19 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Hosting
+
+Hosting is managed through the [firebase console](https://console.firebase.google.com/u/0/project/rainbow-dragon/hosting/sites/onewheel-selector).
+
+To deploy the site run:
+``` bash
+# install dependencies
+$ npm install
+
+# generate static project
+$ npm run generate
+
+# deploy projey
+$ firebase deploy
+```
