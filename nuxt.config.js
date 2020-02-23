@@ -4,7 +4,7 @@ export default {
 	 ** Headers of the page
 	 */
 	head: {
-		title: process.env.npm_package_name || 'Onewheel Selector',
+		title: 'Onewheel Selector',
 		meta: [
 			{ charset: 'utf-8' },
 			{
