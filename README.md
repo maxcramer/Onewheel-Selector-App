@@ -26,7 +26,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 Hosting is managed through the [firebase console](https://console.firebase.google.com/u/0/project/rainbow-dragon/hosting/sites/onewheel-selector).
 
-To deploy the site run:
+This site will automatically be deployed by our workflows on each commit into the master branch.
+
+If you do need to deploy, ensure you have the [firebase CLI](https://firebase.google.com/docs/cli) installed and run:
 ``` bash
 # install dependencies
 $ npm install
