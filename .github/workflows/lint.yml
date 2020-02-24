@@ -33,7 +33,7 @@ jobs:
     - name: Install and Lint
       run: |
         npm ci
-        npm run lint
+        npm run lint --fix
 
     - name: Commit changes
       run: |
