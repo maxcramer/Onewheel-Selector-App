@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import LottiePlayer from './LottiePlayer.vue';
+import { LottiePlayer } from 'lottie-player-vue';
 import instagramAnimation from '../assets/animations/instagram.json';
 
 export default {
